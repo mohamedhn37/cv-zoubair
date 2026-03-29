@@ -1,0 +1,195 @@
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Arial',sans-serif; }
+.cv { display:flex; width:720px; margin:0 auto; min-height:960px; background:#fff; border:0.5px solid #ccc; }
+.sidebar { width:240px; background:#1a1f2e; flex-shrink:0; padding:0 0 24px 0; }
+.photo-box { width:100%; padding:24px 24px 20px; }
+.photo-box img {width:100%; aspect-ratio:1;object-fit:cover;object-position:center top;display:block;border:3px solid #c8a84b;}
+.sb-section { padding:0 20px; margin-top:18px; }
+.sb-title { font-size:10px; font-weight:700; letter-spacing:2px; color:#c8a84b; text-transform:uppercase; border-bottom:1px solid #c8a84b; padding-bottom:5px; margin-bottom:12px; }
+.contact-item { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.contact-icon { width:16px; height:16px; background:#c8a84b; border-radius:50%; flex-shrink:0; display:flex; align-items:center; justify-content:center; }
+.contact-icon svg { width:9px; height:9px; fill:#1a1f2e; }
+.contact-text { font-size:9.5px; color:#ccc; }
+.skill-item { margin-bottom:9px; }
+.skill-name { font-size:9.5px; color:#ddd; margin-bottom:3px; }
+.skill-bar { height:3px; background:#3a3f50; border-radius:2px; }
+.skill-fill { height:100%; background:#c8a84b; border-radius:2px; }
+.lang-item { margin-bottom:10px; }
+.lang-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:2px; }
+.lang-name { font-size:9.5px; color:#ddd; }
+.lang-level { font-size:8.5px; color:#999; }
+.stars { color:#c8a84b; font-size:10px; letter-spacing:1px; }
+.award-item { display:flex; align-items:flex-start; gap:8px; }
+.award-icon { font-size:14px; }
+.award-text { font-size:9.5px; color:#ccc; line-height:1.4; }
+.interest-grid { display:flex; gap:12px; justify-content:center; }
+.interest-item { display:flex; flex-direction:column; align-items:center; gap:4px; }
+.interest-icon { width:30px; height:30px; background:#c8a84b; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; }
+.interest-label { font-size:8px; color:#aaa; text-align:center; }
+
+.main { flex:1; padding:28px 28px 24px; }
+.main-name { font-size:30px; font-weight:900; color:#1a1f2e; text-transform:uppercase; letter-spacing:2px; line-height:1; }
+.main-divider { height:2px; background:#1a1f2e; margin:10px 0 18px; }
+.main-title { font-size:11px; font-weight:700; color:#1a1f2e; text-transform:uppercase; letter-spacing:1.5px; border-bottom:2px solid #1a1f2e; padding-bottom:5px; margin-bottom:10px; margin-top:18px; }
+.profil-text { font-size:9.5px; color:#444; line-height:1.65; }
+.exp-row { display:flex; gap:14px; margin-bottom:12px; }
+.exp-date { font-size:8.5px; color:#888; min-width:58px; padding-top:2px; flex-shrink:0; font-style:italic; }
+.exp-content { flex:1; }
+.exp-poste { font-size:10.5px; font-weight:700; color:#1a1f2e; }
+.exp-bullets { margin-top:4px; padding-left:0; }
+.exp-bullet { font-size:9px; color:#555; padding:1.5px 0 1.5px 12px; position:relative; line-height:1.4; }
+.exp-bullet::before { content:'•'; position:absolute; left:2px; color:#c8a84b; font-size:10px; top:0px; }
+.form-row { display:flex; gap:14px; margin-bottom:10px; }
+.form-date { font-size:8.5px; color:#888; min-width:58px; padding-top:2px; flex-shrink:0; font-style:italic; }
+.form-content { flex:1; }
+.form-titre { font-size:10px; font-weight:700; color:#1a1f2e; }
+.form-ecole { font-size:9px; color:#666; margin-top:1px; }
+</style>
+<div class="cv">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="photo-box">
+      <img src="./face2.png" alt="photo"/>
+    </div>
+
+    <div class="sb-section">
+      <div class="sb-title">Contact</div>
+      <div class="contact-item">
+        <div class="contact-icon"><svg viewBox="0 0 12 12"><path d="M6 0C3.8 0 2 1.8 2 4c0 3 4 8 4 8s4-5 4-8c0-2.2-1.8-4-4-4zm0 5.5C5.2 5.5 4.5 4.8 4.5 4S5.2 2.5 6 2.5 7.5 3.2 7.5 4 6.8 5.5 6 5.5z"/></svg></div>
+        <span class="contact-text">Bloc 16 numéro 17 Sidi othmane Casablanca, Maroc</span>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><svg viewBox="0 0 12 12"><path d="M10 8.5l-2-1-.7.7C5.8 7.8 4.2 6.2 3.8 4.7l.7-.7-1-2L2 2C1.5 4.5 3 9 8 10l.5-1.5z"/></svg></div>
+        <span class="contact-text">0698551715</span>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><svg viewBox="0 0 12 12"><path d="M1 2h10v8H1zm0 0l5 5 5-5"/></svg></div>
+        <span class="contact-text">zoubairouachki@gmail.com</span>
+      </div>
+    </div>
+
+    <div class="sb-section">
+      <div class="sb-title">Compétences</div>
+      <div class="skill-item"><div class="skill-name">Techniques de vente & négociation</div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">Relation client & fidélisation</div><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">Communication & prise de parole</div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">Sens du service commercial</div><div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">Travail en équipe</div><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">Gestion des priorités</div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+      <div class="skill-item"><div class="skill-name">Microsoft Word, Excel, PowerPoint</div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+    </div>
+
+    <div class="sb-section">
+      <div class="sb-title">Langues</div>
+      <div class="lang-item">
+        <div class="lang-row"><span class="lang-name">Arabe</span><span class="stars">★★★★★</span></div>
+        <div class="lang-level">Langue maternelle</div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-row"><span class="lang-name">Français</span><span class="stars">★★★★☆</span></div>
+        <div class="lang-level">Bon niveau</div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-row"><span class="lang-name">Anglais</span><span class="stars">★★★☆☆</span></div>
+        <div class="lang-level">Niveau intermédiaire</div>
+      </div>
+    </div>
+
+    <div class="sb-section">
+      <div class="sb-title">Récompenses</div>
+      <div class="award-item">
+        <span class="award-icon">🏆</span>
+        <span class="award-text">Prix de l'icône de la détermination (2022)</span>
+      </div>
+    </div>
+
+    <div class="sb-section">
+      <div class="sb-title">Centres d'intérêt</div>
+      <div class="interest-grid">
+        <div class="interest-item"><div class="interest-icon">🧠</div><div class="interest-label">Coaching</div></div>
+        <div class="interest-item"><div class="interest-icon">✈️</div><div class="interest-label">Voyages</div></div>
+        <div class="interest-item"><div class="interest-icon">🏊</div><div class="interest-label">Natation</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+    <div class="main-name">Ouachki Zoubair</div>
+    <div class="main-divider"></div>
+
+    <div class="main-title">Profil</div>
+    <div class="profil-text">Vendeur dynamique et orienté client, avec une expérience solide dans le retail, notamment chez Decathlon depuis 2024. Passionné par le coaching et la prise de parole en public, je sais créer un bon relationnel avec les clients, comprendre leurs besoins et proposer des solutions adaptées. Motivé, souriant et doté d'un fort sens du service, je m'intègre facilement dans tout environnement commercial.</div>
+
+    <div class="main-title">Expériences Professionnelles</div>
+
+    <div class="exp-row">
+      <div class="exp-date">2024–Présent</div>
+      <div class="exp-content">
+        <div class="exp-poste">Conseiller de Vente – Decathlon</div>
+        <div class="exp-bullets">
+          <div class="exp-bullet">Accueil, conseil et accompagnement des clients dans leurs achats</div>
+          <div class="exp-bullet">Identification des besoins et solutions personnalisées</div>
+          <div class="exp-bullet">Merchandising, mise en rayon et atteinte des objectifs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-date">3 mois</div>
+      <div class="exp-content">
+        <div class="exp-poste">Stagiaire en Coaching</div>
+        <div class="exp-bullets">
+          <div class="exp-bullet">Accompagnement et motivation des individus</div>
+          <div class="exp-bullet">Développement des compétences en communication</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-date">2 mois</div>
+      <div class="exp-content">
+        <div class="exp-poste">Commerce Libre</div>
+        <div class="exp-bullets">
+          <div class="exp-bullet">Gestion d'activité commerciale indépendante</div>
+          <div class="exp-bullet">Négociation et relation client</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-row">
+      <div class="exp-date">3 mois</div>
+      <div class="exp-content">
+        <div class="exp-poste">Vendeur – Boutique de Vêtements Hommes</div>
+        <div class="exp-bullets">
+          <div class="exp-bullet">Conseil client, vente directe et gestion de caisse</div>
+          <div class="exp-bullet">Organisation et présentation des produits</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-title">Formation</div>
+
+    <div class="form-row">
+      <div class="form-date">2026</div>
+      <div class="form-content"><div class="form-titre">Attestation en gestion d'agence de voyage</div><div class="form-ecole">Entraide Nationale</div></div>
+    </div>
+    <div class="form-row">
+      <div class="form-date">2023–2024</div>
+      <div class="form-content"><div class="form-titre">Licence Fondamentale – Option Physique</div><div class="form-ecole">Faculté des Sciences Ben M'sik, Université Hassan II</div></div>
+    </div>
+    <div class="form-row">
+      <div class="form-date">2022–2023</div>
+      <div class="form-content"><div class="form-titre">DEUG</div></div>
+    </div>
+    <div class="form-row">
+      <div class="form-date">2021–2022</div>
+      <div class="form-content"><div class="form-titre">Diplôme de Coaching</div><div class="form-ecole">Personnel, Scolaire, Familial, Professionnel</div></div>
+    </div>
+    <div class="form-row">
+      <div class="form-date">2018–2019</div>
+      <div class="form-content"><div class="form-titre">Baccalauréat – Sciences Physiques</div></div>
+    </div>
+  </div>
+</div>
